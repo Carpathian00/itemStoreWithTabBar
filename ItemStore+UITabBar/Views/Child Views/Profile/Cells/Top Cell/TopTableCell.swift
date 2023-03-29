@@ -13,13 +13,13 @@ class TopTableCell: UITableViewCell {
     
     @IBOutlet weak var outerContainterView: UIView! {
         didSet {
-            outerContainterView.layer.cornerRadius = outerContainterView.frame.size.height / 1.2
+            outerContainterView.layer.cornerRadius = outerContainterView.frame.width / 1.65
         }
     }
     
     @IBOutlet weak var profileImage: UIImageView! {
         didSet {
-            profileImage.layer.cornerRadius = profileImage.frame.size.height / 1.2
+            profileImage.layer.cornerRadius = profileImage.frame.size.height / 1.65
             profileImage.clipsToBounds = true
         }
     }

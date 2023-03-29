@@ -21,9 +21,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 NSAttributedString.Key.foregroundColor : UIColor.white
             ]
             navigationBarAppearance.backgroundColor = UIColor.systemPink
+            navigationBarAppearance.shadowColor = .clear
+            
             UINavigationBar.appearance().standardAppearance = navigationBarAppearance
             UINavigationBar.appearance().compactAppearance = navigationBarAppearance
             UINavigationBar.appearance().scrollEdgeAppearance = navigationBarAppearance
+            
+
             
             let tabBarApperance = UITabBarAppearance()
             tabBarApperance.configureWithOpaqueBackground()

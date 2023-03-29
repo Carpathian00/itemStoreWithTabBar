@@ -69,6 +69,10 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         }
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = ProfileViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
     
     
     
